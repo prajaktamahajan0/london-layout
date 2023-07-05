@@ -1,0 +1,345 @@
+:root {
+      --color-pri: #69be28;
+      --color-sec: #006a4d;
+      --color-dark: #000;
+      --color-white: #fff;
+      --color-grey: #3c3c3c;
+}
+
+header {
+      background-color: var(--color-white);
+      margin-bottom: 0px;
+}
+
+header .navbar-header {
+      height: 8rem;
+}
+
+header .navbar-default {
+      background-color: transparent;
+      border-color: transparent;
+
+}
+
+header .navbar-default .navbar-brand {
+      padding: 1.5rem 0;
+}
+
+header .navbar-default .navbar-toggle {
+      border-color: var(--color-sec);
+      margin-top: 2rem;
+}
+
+header .navbar-default .navbar-toggle:focus,
+header .navbar-default .navbar-toggle:hover {
+      background-color: transparent;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+      background-color: var(--color-sec);
+}
+
+header .navcenter {
+      padding-left: 15rem;
+}
+
+header .navbar {
+      margin-bottom: 0;
+}
+
+header .navbar-default .navbar-nav>li>a {
+      font-size: 1.8rem;
+      color: var(--color-sec);
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-top: 3.2rem;
+
+}
+
+header .navcenter li a:hover,
+header .navcenter li a.active {
+      color: var(--color-pri);
+}
+
+header .navcenter .active a::before {
+      width: 100%;
+}
+
+header .navcenter li a::before,
+header .navcenter li .active::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 0%;
+      background-color: var(--color-pri);
+      transition: all 0.7s ease-in-out;
+}
+
+header .navcenter li a:hover::before {
+      width: 100%;
+}
+
+header .navbar-default .navbar-right>li>a {
+      width: 12.5rem;
+      height: 5rem;
+      border-radius: 0;
+      border: 1px solid var(--color-pri);
+      background-color: var(--color-pri);
+      color: var(--color-white);
+      transition: all 0.7s ease-in-out;
+}
+
+header .navbar-default .navbar-right>li>a:hover,
+header .navbar-default .navbar-right>li>a:active,
+header .navbar-default .navbar-right>li>a:focus {
+      background-color: var(--color-white);
+      color: var(--color-pri);
+}
+
+header .navcenter li a:hover,
+header .navcenter li a.active {
+      color: var(--color-pri) !important;
+}
+
+ul li {
+      list-style: none;
+}
+
+
+.heroimg {
+      background-image: -webkit-linear-gradient(rgb(82, 158, 148, 0.5), rgb(82, 158, 148, 0.5)), url(../images/headerimg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 10rem 0;
+      margin-top: -0.1rem;
+
+}
+
+.pri-heading {
+      font-size: 3.2rem;
+      font-weight: bold;
+      color: var(--color-white);
+      margin-bottom: 2.5rem;
+}
+
+.sec-heading {
+      font-size: 5.8rem;
+      font-weight: bold;
+      color: var(--color-white);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2.5rem;
+      margin-bottom: 4.7rem;
+
+}
+
+.date {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: var(--color-white);
+
+}
+
+.about {
+      padding: 12.5rem 0;
+}
+
+.about h2 {
+      font-size: 3.6rem;
+      font-weight: bold;
+      color: var(--color-sec);
+      margin-bottom: 2rem;
+}
+
+.about p {
+      font-size: 1.6rem;
+      color: var(--color-dark);
+      margin-bottom: 3rem;
+}
+
+.about h3 {
+      font-size: 2rem;
+      color: var(--color-sec);
+      font-weight: bold;
+      margin-bottom: 2rem;
+}
+
+.about figure {
+      margin-top: 8.5rem;
+}
+
+.speakers {
+      padding: 10rem 0;
+      background-color: var(--color-sec);
+}
+
+.speakers h2 {
+      color: var(--color-white);
+      font-size: 3.6rem;
+      font-weight: bold;
+      margin-bottom: 2.5rem;
+}
+
+.speakers p {
+      font-size: 1.6rem;
+      color: var(--color-white);
+        margin-bottom: 5rem;
+}
+
+.spekersimages h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--color-white);
+      margin-bottom: 1rem;
+}
+
+.spekersimages p {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: var(--color-white);
+      margin-bottom: 0;
+}
+
+.spekersimages .para {
+      margin-bottom: 7rem;
+}
+
+.spekersimages img {
+      border-radius: 50%;
+      margin-bottom: 1.5rem;
+}
+
+.btnspekers .btn-spe {
+      padding: 1.5rem 2.5rem;
+      border: 2px solid var(--color-white);
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--color-white);
+      text-transform: uppercase;
+      transition: all .7s ease-in-out;
+
+}
+
+.btnspekers .btn-spe:hover {
+      background-color: var(--color-white);
+      color: var(--color-sec);
+
+}
+
+.contact {
+      background-color: var(--color-grey);
+      color: var(--color-white);
+      padding: 10rem 0;
+}
+
+.contact h2 {
+      font-size: 1.6rem;
+      font-weight: bold;
+}
+
+.icons h3 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+}
+
+.contact .icons li a {
+      font-size: 2rem;
+      font-weight: bold;
+      background-color: var(--color-grey);
+      color: var(--color-white);
+}
+
+@media all and (max-width: 992px) {
+      header .navcenter {
+            padding-left: 0;
+      }
+
+      .about {
+            padding: 2rem;
+      }
+
+      .about h2 {
+            margin-bottom: 1rem;
+      }
+
+      .about p {
+            margin-bottom: 1rem;
+      }
+
+      .about figure {
+            margin-top: 2rem;
+      }
+
+      .speakers {
+            padding: 1rem;
+      }
+
+      .speakers h2 {
+            margin-bottom: 1rem;
+      }
+
+      .speakers p {
+            margin-bottom: 1rem;
+      }
+
+      .contact {
+            padding: 1rem;
+      }
+}
+
+@media all and (max-width: 768px) {
+
+
+      .about {
+            margin-top: 0;
+            padding: 1rem;
+      }
+
+      .about h2 {
+            margin-bottom: 1rem;
+      }
+
+      .about h3 {
+            margin-bottom: 1rem;
+      }
+
+      .about p {
+            margin-bottom: 1rem;
+      }
+
+      .about figure {
+            margin-top: 2rem;
+      }
+
+      .speakers {
+            padding: 1rem;
+      }
+
+      .speakers h2 {
+            margin-bottom: 2rem;
+      }
+
+      .speakers p {
+            margin-bottom: 0;
+      }
+
+      .spekersimages img {
+            margin-bottom: 0;
+      }
+
+      .spekersimages .para {
+            margin-bottom: 1rem;
+      }
+
+      .spekersimages h2 {
+            margin-bottom: 1rem;
+      }
+
+      .contact {
+            padding: 1rem;
+      }
+
+}
